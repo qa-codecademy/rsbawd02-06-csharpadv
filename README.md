@@ -20,7 +20,7 @@ This repository will contain every piece of material about the subject. It will 
 ## Important links 
 
 * [Presentations link](https://seavusedu.talentlms.com/index)
-* [Schedule](https://docs.google.com/spreadsheets/d/1izXD_QdgjDYl9EkOlRN-BT5iEr7G3e8F/edit#gid=1238165015)
+* [Schedule](https://docs.google.com/spreadsheets/d/1RSYyNb_of2pbDCkT-2hSgGC-z_LAA5W2/edit#gid=947477397)
 
 ## Resources for being up to date with C#
 
