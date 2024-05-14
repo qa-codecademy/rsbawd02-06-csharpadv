@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+.idea/.idea.rsbawd02-06-csharpadv/.idea/projectSettingsUpdater.xml
+
+.idea/.idea.rsbawd02-06-csharpadv/.idea/workspace.xml
