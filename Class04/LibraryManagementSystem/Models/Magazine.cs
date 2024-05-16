@@ -7,5 +7,5 @@ public class Magazine : LibraryItem
 
     // Magazine: [123] National Geographic, 2021 - published by: National Geographic Society
     public override string GetDetails() => 
-        $"Magazine: [{IssueNumber}] {Title}, {YearPublished} - published by: {Publisher}";
+        $"Magazine: [{IssueNumber}] {Title}, {YearPublished} - published by: {Publisher} {IsBorrowed}";
 }

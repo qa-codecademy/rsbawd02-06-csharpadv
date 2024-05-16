@@ -23,18 +23,35 @@ while (true)
     {
         AddNewItem();
     }
+    else if (option == "2")
+    {
+        RemoveSelectedItem();
+    }
+    else if (option == "3")
+    {
+        BorrowItem();
+    }
+    else if (option == "4")
+    {
+        ReturnItem();
+    }
+    else if (option == "5")
+    {
+        DisplayItem();
+    }
     else if (option == "6")
     {
-        // TODO: Implement search
-        library.DisplayItems();
+        SearchForItems();
+    }
+    else if (option == "7")
+    {
+        library.DisplayAvailableItems();
     }
     else if (option == "0")
     {
         break;
     }
 }
-
-
 
 
 void AddNewItem()
@@ -133,6 +150,99 @@ void AddNewItem()
     }
 }
 
+void RemoveSelectedItem()
+{
+    Console.WriteLine("Enter the title of the item you want to remove:");
+    var title = Console.ReadLine()!;
+
+    var item = library.GetItemByTitle(title);
+    if (item == null)
+    {
+        Console.WriteLine("ERROR: Item not found.");
+        return;
+    }
+
+    library.RemoveItem(item);
+    Console.WriteLine($"You have removed: {item.GetDetails()}");
+}
+
+void BorrowItem()
+{
+    Console.WriteLine("Enter the title of the item you want to borrow:");
+    var title = Console.ReadLine()!;
+
+    var item = library.GetItemByTitle(title);
+    if (item == null)
+    {
+        Console.WriteLine("ERROR: Item not found.");
+        return;
+    }
+    if (item.IsBorrowed)
+    {
+        Console.WriteLine("ERROR: Item is already borrowed.");
+        return;
+    }
+
+    library.BorrowItem(item);
+    Console.WriteLine($"You have borrowed: {item.GetDetails()}");
+}
+
+void ReturnItem()
+{
+    Console.WriteLine("Enter the title of the item you want to return:");
+    var title = Console.ReadLine()!;
+
+    var item = library.GetItemByTitle(title);
+    if (item == null)
+    {
+        Console.WriteLine("ERROR: Item not found.");
+        return;
+    }
+    if (!item.IsBorrowed)
+    {
+        Console.WriteLine("ERROR: Item is not borrowed.");
+        return;
+    }
+
+    library.ReturnItem(item);
+    Console.WriteLine($"You have returned: {item.GetDetails()}");
+}
+
+void SearchForItems()
+{
+    Console.WriteLine("Enter the search term:");
+    var searchTerm = Console.ReadLine()!;
+
+    var foundItems = library.FindByTerm(searchTerm);
+    if (foundItems.Count == 0)
+    {
+        Console.WriteLine("ERROR: No items found.");
+        return;
+    }
+
+    Console.WriteLine("Items that match your search term:");
+    foreach (var item in foundItems)
+    {
+        Console.WriteLine(item.GetDetails());
+    }
+}
+
+void DisplayItem()
+{
+    Console.WriteLine("Enter the title of the item you want to display:");
+    var title = Console.ReadLine()!;
+
+    var item = library.GetItemByTitle(title);
+    if (item == null)
+    {
+        Console.WriteLine("ERROR: Item not found.");
+        return;
+    }
+
+    Console.WriteLine("Item that you have requested:");
+    Console.WriteLine(item.GetDetails());
+}
+
 void DisplayOptions()
 {
     Console.WriteLine();
@@ -143,6 +253,7 @@ void DisplayOptions()
     Console.WriteLine("4. Return an item");
     Console.WriteLine("5. Display item from the library");
     Console.WriteLine("6. Search for item");
+    Console.WriteLine("7. Display all available");
     Console.WriteLine("0. Exit");
     Console.WriteLine();
 }

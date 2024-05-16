@@ -26,13 +26,31 @@ public class Library
         item.ReturnItem();
     }
 
+    public IList<ILibraryItem> FindByTerm(string searchTerm) =>
+        _items
+            .Where(item => item.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+
     public void DisplayItems()
     {
+        Console.WriteLine("All library items:");
         foreach (var item in _items)
         {
             Console.WriteLine(item.GetDetails());
         }
     }
+
+    public void DisplayAvailableItems()
+    {
+        Console.WriteLine("Available library items:");
+        foreach (var item in _items.Where(item => !item.IsBorrowed))
+        {
+            Console.WriteLine(item.GetDetails());
+        }
+    }
+
+    public ILibraryItem? GetItemByTitle(string title) => 
+        _items.FirstOrDefault(item => item.Title == title);
 
     public void SeedItems()
     {

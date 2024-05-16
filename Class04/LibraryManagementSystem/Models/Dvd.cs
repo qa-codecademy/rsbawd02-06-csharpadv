@@ -7,5 +7,5 @@ public class Dvd : LibraryItem
 
     // DVD: The Godfather, director: Francis Ford Coppola, 175 minutes - year 1972, rated 5
     public override string GetDetails() => 
-        $"DVD: {Title}, director: {Author}, {DurationInMinutes} minutes - year {YearPublished}, rated {Rating}";
+        $"DVD: {Title}, director: {Author}, {DurationInMinutes} minutes - year {YearPublished}, rated {Rating} {IsBorrowed}";
 }
