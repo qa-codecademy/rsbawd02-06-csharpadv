@@ -4,11 +4,7 @@ namespace ExerciseTime
 {
     public class PetStore<T> where T : Pet
     {
-        public List<T> Pets;
-        public PetStore()
-        {
-            Pets = new List<T>();
-        }
+        public List<T> Pets = new List<T>();
 
         public void PrintPets()
         {
@@ -18,7 +14,9 @@ namespace ExerciseTime
 
         public void BuyPet(string name)
         {
-            T pet = Pets.FirstOrDefault(x => x.Name == name);
+            T pet = Pets
+                .Where(x => x.Name == name)
+                .FirstOrDefault();
            
             if (pet == null)
             {
