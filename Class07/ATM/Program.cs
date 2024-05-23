@@ -15,14 +15,14 @@
         while (true)
         {
             Console.WriteLine("Welcome to the ATM");
-            Console.Write("Enter account number: ");
 
+            Console.Write("Enter account number: ");
             string accountNumber = Console.ReadLine();
 
             Console.Write("Enter PIN: ");
             string pin = Console.ReadLine();
 
-            Account currentAccount = accounts.FirstOrDefault(acc => acc.AccountNumber == accountNumber && acc.ValidatePin(pin));
+            Account currentAccount = Login(accounts, accountNumber, pin);
 
             if (currentAccount != null)
             {
@@ -70,5 +70,15 @@
                 Console.WriteLine("Invalid account number or PIN. Please try again.");
             }
         }
+    }
+
+    private static Account Login(List<Account> accounts, string accountNumber, string pin)
+    {
+        Account currentAccount = accounts
+            .Where(acc => acc.AccountNumber == accountNumber)
+            .Where(acc => acc.ValidatePin(pin) == true)
+            .FirstOrDefault();
+        
+        return currentAccount;
     }
 }
