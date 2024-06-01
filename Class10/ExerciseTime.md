@@ -81,9 +81,9 @@ In this exercise, you will create a simple book library application that demonst
         };
 
 4. **Use LINQ to Query the Collection:**
-    - Write a LINQ query to find all books written by a specific author.
+    - Write a LINQ query to find all books written by a George Orwell.
     - Write a LINQ query to find the most recent book.
-    - Write a LINQ query to order the books by title.
+    - Write a LINQ query to order the books by title descending.
 
 5. **Display the Results:**
     - Display the details of the books that match the LINQ queries using the `GetBookInfo` method.
