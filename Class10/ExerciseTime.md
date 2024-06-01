@@ -106,3 +106,21 @@ In this exercise, you will create a simple application that demonstrates your un
 
 4. **Display the File Content:**
     - Display the content of the file back to the user.
+
+### Exercise 4: Creating and Using Extension Methods in C#
+
+**Objective:**
+In this exercise, you will create a simple application that demonstrates your understanding of extension methods in C#. You will define an extension method for the `string` class, use it to manipulate a string, and display the result.
+
+**Tasks:**
+
+1. **Define an Extension Method:**
+    - Create a static class called `StringExtensions`.
+    - Define an extension method called `ReverseWords` that takes a `string` and returns a new string with the words in reverse order.
+
+2. **Use the Extension Method:**
+    - In your main program, prompt the user to enter a sentence.
+    - Use the `ReverseWords` extension method to reverse the order of the words in the sentence.
+
+3. **Display the Result:**
+    - Display the original and the modified sentences.
