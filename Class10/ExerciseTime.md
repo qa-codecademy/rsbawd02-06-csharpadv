@@ -124,3 +124,48 @@ In this exercise, you will create a simple application that demonstrates your un
 
 3. **Display the Result:**
     - Display the original and the modified sentences.
+
+### Exercise 5: Working with classes
+
+In this exercise, you'll create a simple C# console application to manage a list of persons. The application will allow users to add new persons, delete existing ones, and view all persons in the list.
+
+**Tasks:**
+
+1. **Person Class**:
+    - Create a `Person` class with the following properties:
+        - `Id` (int): Unique identifier for each person.
+        - `Name` (string): Name of the person.
+        - `Age` (int): Age of the person.
+
+2. **Main Program**:
+    - Implement a console-based menu with the following options:
+        1. Add Person
+        2. Delete Person
+        3. View All Persons
+        4. Exit
+    - Use a loop to keep the program running until the user chooses to exit.
+    - For each option, implement the necessary functionality:
+        - **Add Person**:
+            - Prompt the user to enter the ID, name, and age of the person.
+            - Add the new person to the list.
+        - **Delete Person**:
+            - Prompt the user to enter the ID of the person to delete.
+            - Find and remove the person with the specified ID from the list.
+        - **View All Persons**:
+            - Display all persons in the list, including their ID, name, and age.
+        - **Exit**:
+            - Terminate the program.
+
+3. **Validation**:
+    - Ensure that user inputs are validated where appropriate (e.g., numeric inputs for IDs and ages).
+    - Handle invalid inputs gracefully with appropriate error messages.
+
+4. **Sample Output**:
+    - Provide sample output demonstrating the functionality of the program, including adding, deleting, and viewing persons.
+
+## Additional Notes
+
+- You may use LINQ for querying the list of persons.
+- Aim for simplicity and readability in your code.
+- Test your program thoroughly to ensure it behaves as expected in various scenarios.
+
