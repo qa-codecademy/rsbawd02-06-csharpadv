@@ -75,6 +75,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4", "Class10\Exerci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsApp", "Class10\NewsApp\NewsApp.csproj", "{FDDA1861-E4DA-4527-8601-B0E55F98B534}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryManagament", "Class11\MemoryManagament\MemoryManagament.csproj", "{4275A0FF-8A96-4464-9EE0-FA37B12206FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{FDDA1861-E4DA-4527-8601-B0E55F98B534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDDA1861-E4DA-4527-8601-B0E55F98B534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDDA1861-E4DA-4527-8601-B0E55F98B534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4275A0FF-8A96-4464-9EE0-FA37B12206FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4275A0FF-8A96-4464-9EE0-FA37B12206FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4275A0FF-8A96-4464-9EE0-FA37B12206FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4275A0FF-8A96-4464-9EE0-FA37B12206FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +197,7 @@ Global
 		{605C4361-6C83-41AB-90EA-51E093F4FB49} = {8813623D-1570-4EF7-AAA7-C0E31DA2FBF5}
 		{7BF9FBBB-8E9C-4C26-8E71-752A82003750} = {8813623D-1570-4EF7-AAA7-C0E31DA2FBF5}
 		{FDDA1861-E4DA-4527-8601-B0E55F98B534} = {8813623D-1570-4EF7-AAA7-C0E31DA2FBF5}
+		{4275A0FF-8A96-4464-9EE0-FA37B12206FE} = {34AEAD89-4263-470E-9FA1-03864DF4A341}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4124A474-FF6B-4D34-B302-3B9A685118A2}
