@@ -10,7 +10,7 @@ public class Program
         int b = 20;
 
         a = b;
-        b = 30; 
+        b = 30;
 
         Console.WriteLine(a);
         Console.WriteLine(b);
