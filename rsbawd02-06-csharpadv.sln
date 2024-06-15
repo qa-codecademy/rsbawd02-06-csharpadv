@@ -47,7 +47,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClass", "Class03\Ab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Class03\Interface\Interface.csproj", "{6AD5C17B-23E1-454C-867E-708E756C9DFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "Class04\LibraryManagementSystem\LibraryManagementSystem.csproj", "{BD3F6ECB-DEE9-4EAE-A311-5F3B0BB250FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem", "Class04\LibraryManagementSystem\LibraryManagementSystem.csproj", "{BD3F6ECB-DEE9-4EAE-A311-5F3B0BB250FE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticsAndPolymorphism", "Class05\StaticsAndPolymorphism\StaticsAndPolymorphism.csproj", "{86DAB833-733D-4670-B65D-2E8D57DD1CE2}"
 EndProject
@@ -86,6 +86,26 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncCSharp", "Class13\AsyncCSharp\AsyncCSharp.csproj", "{60CCBC31-6727-4E34-88DE-94F0AFC491D3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpExamples", "Class13\HttpExamples\HttpExamples.csproj", "{204EF405-149D-4EB4-863E-D6B6367BC652}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagamentApp", "Class14\LibraryManagamentApp\LibraryManagamentApp.csproj", "{EC6B9609-99C1-42BD-8898-7738CDF853F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taxi", "Taxi", "{67F5DF30-BD17-425F-A5D6-4AB45524B0C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.App", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TaxiApp\TaxiCo.TaxiManager9000\TaxiCo.TaxiManager9000.App\TaxiManager9000.App.csproj", "{9393A919-9F9A-4860-80BB-7F7ED75C7E6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.DataAccess", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TaxiApp\TaxiCo.TaxiManager9000\TaxiCo.TaxiManager9000.DataAccess\TaxiManager9000.DataAccess.csproj", "{9451CB2E-F6B0-464B-8D9E-C92555385101}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.Domain", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TaxiApp\TaxiCo.TaxiManager9000\TaxiCo.TaxiManager9000.Domain\TaxiManager9000.Domain.csproj", "{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiManager9000.Services", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TaxiApp\TaxiCo.TaxiManager9000\TaxiCo.TaxiManager9000.Services\TaxiManager9000.Services.csproj", "{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TryBeingFit", "TryBeingFit", "{CEAEB048-9E0A-4ECA-9692-D26E29261C0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.TryBeingFit.App", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TryBeingFit\SEDC.TryBeingFit\SEDC.TryBeingFit.App\SEDC.TryBeingFit.App.csproj", "{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.TryBeingFit.Domain", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TryBeingFit\SEDC.TryBeingFit\SEDC.TryBeingFit.Domain\SEDC.TryBeingFit.Domain.csproj", "{B5DCAA77-2B20-4C67-9343-CEB6FF323858}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.TryBeingFit.Services", "..\..\rsbawd02-06-csharpadv-internal\Workshop\TryBeingFit\SEDC.TryBeingFit\SEDC.TryBeingFit.Services\SEDC.TryBeingFit.Services.csproj", "{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +221,38 @@ Global
 		{204EF405-149D-4EB4-863E-D6B6367BC652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{204EF405-149D-4EB4-863E-D6B6367BC652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{204EF405-149D-4EB4-863E-D6B6367BC652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6B9609-99C1-42BD-8898-7738CDF853F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6B9609-99C1-42BD-8898-7738CDF853F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6B9609-99C1-42BD-8898-7738CDF853F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6B9609-99C1-42BD-8898-7738CDF853F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9393A919-9F9A-4860-80BB-7F7ED75C7E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9393A919-9F9A-4860-80BB-7F7ED75C7E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9393A919-9F9A-4860-80BB-7F7ED75C7E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9393A919-9F9A-4860-80BB-7F7ED75C7E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9451CB2E-F6B0-464B-8D9E-C92555385101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9451CB2E-F6B0-464B-8D9E-C92555385101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9451CB2E-F6B0-464B-8D9E-C92555385101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9451CB2E-F6B0-464B-8D9E-C92555385101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DCAA77-2B20-4C67-9343-CEB6FF323858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DCAA77-2B20-4C67-9343-CEB6FF323858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DCAA77-2B20-4C67-9343-CEB6FF323858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DCAA77-2B20-4C67-9343-CEB6FF323858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -233,6 +285,16 @@ Global
 		{EE179146-3EE2-47A4-BAB9-B67D192B1507} = {8E2DDBCB-C417-47B5-83AE-2564266F2250}
 		{60CCBC31-6727-4E34-88DE-94F0AFC491D3} = {848CD576-9CCF-4306-BE95-07FB94FCB10A}
 		{204EF405-149D-4EB4-863E-D6B6367BC652} = {848CD576-9CCF-4306-BE95-07FB94FCB10A}
+		{EC6B9609-99C1-42BD-8898-7738CDF853F1} = {90441132-14BB-44A4-AFAC-88101D59090F}
+		{67F5DF30-BD17-425F-A5D6-4AB45524B0C9} = {2B874E44-3DA3-4D42-B25E-D9059F2549BC}
+		{9393A919-9F9A-4860-80BB-7F7ED75C7E6E} = {67F5DF30-BD17-425F-A5D6-4AB45524B0C9}
+		{9451CB2E-F6B0-464B-8D9E-C92555385101} = {67F5DF30-BD17-425F-A5D6-4AB45524B0C9}
+		{D2A22F4B-19C0-41C1-AC3C-4BE6B05189E1} = {67F5DF30-BD17-425F-A5D6-4AB45524B0C9}
+		{BFE16C3B-56D7-4AB2-BFE8-27A5DDBBA252} = {67F5DF30-BD17-425F-A5D6-4AB45524B0C9}
+		{CEAEB048-9E0A-4ECA-9692-D26E29261C0C} = {2B874E44-3DA3-4D42-B25E-D9059F2549BC}
+		{B7E651AE-7D7E-4C73-91F6-2BA250C08EB6} = {CEAEB048-9E0A-4ECA-9692-D26E29261C0C}
+		{B5DCAA77-2B20-4C67-9343-CEB6FF323858} = {CEAEB048-9E0A-4ECA-9692-D26E29261C0C}
+		{2DEF8B4B-30F6-47E8-89E8-F4C8BC17CC0B} = {CEAEB048-9E0A-4ECA-9692-D26E29261C0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4124A474-FF6B-4D34-B302-3B9A685118A2}
